@@ -1,0 +1,166 @@
+<!--
+##################################################
+Author - Oluwatomi
+Purpose - The base page for a form for a kids color trivia
+Instructor - Joey Kitson
+Dependencies - Yes
+Since - 15/03/2021
+##################################################
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kids Color Trivia</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="trivProcess.js"></script>
+
+</head>
+<div id="container">
+    <body>
+    <legend>Kids Color Trivia</legend>
+    <h3 id="header">Do you know your colors? Test yourself on what you know!!!</h3>
+    <form id="formFilled">
+        <div class="form-group">
+            <label for="q1">1) What is the color of BLOOD?</label>
+            <button onclick="return hint_1()" class="btn hintBtn" id="hint1">Hint</button>
+            <input type="text" id="q1" class="form-control formRounded">
+            <p id="error1"></p>
+        </div>
+        <div class="form-group">
+            <label for="q2">2) What is the color of SNOW?</label>
+            <button onclick="return hint_2()" class="btn hintBtn">Hint</button>
+            <input type="text" id="q2" class="form-control formRounded">
+            <p id="error2"></p>
+        </div>
+        <div class="form-group">
+            <label for="q3">3) What color is usually associated with PLANTS?</label>
+            <button onclick="return hint_3()" class="btn hintBtn">Hint</button>
+            <select id="q3" class="form-control formRounded">
+                <option>Please Select</option>
+                <option>Purple</option>
+                <option>Green</option>
+                <option>Grey</option>
+                <option>Black</option>
+            </select>
+            <p id="error3"></p>
+        </div>
+        <div class="form-group">
+            <label for="q4">4) What color is usually associated with WATER?</label>
+            <button onclick="return hint_4()" class="btn hintBtn">Hint</button>
+            <select id="q4" class="form-control formRounded">
+                <option>Please Select</option>
+                <option>Black</option>
+                <option>Red</option>
+                <option>Yellow</option>
+                <option>Blue</option>
+            </select>
+            <p id="error4"></p>
+        </div>
+        <div>
+            <span class="modelLabel">5) What is the result of mixing BLUE + RED?</span>
+            <button onclick="return hint_5()" class="btn hintBtn">Hint</button>
+            <div class="radio">
+                <label for="q5_1" class="radio">
+                    <input type="radio" name="q5option" id="q5_1" value="White"> White
+                </label>
+            </div>
+            <div class="radio">
+                <label for="q5_2" class="radio">
+                    <input type="radio" name="q5option" id="q5_2" value="Purple"> Purple
+                </label>
+            </div>
+            <div class="radio">
+                <label for="q5_3" class="radio">
+                    <input type="radio" name="q5option" id="q5_3" value="Green"> Green
+                </label>
+            </div>
+            <div class="radio">
+                <label for="q5_4" class="radio">
+                    <input type="radio" name="q5option" id="q5_4" value="Yellow"> Yellow
+                </label>
+            </div>
+            <p id="error5"></p>
+        </div>
+        <div>
+            <span class="modelLabel">6) What is the result of mixing YELLOW + BLUE?</span>
+            <button onclick="return hint_6()" class="btn hintBtn">Hint</button>
+            <div class="radio">
+                <label for="q6_1" class="radio">
+                    <input type="radio" name="q6option" id="q6_1" value="Green"> Green
+                </label></div>
+            <div class="radio">
+                <label for="q6_2" class="radio">
+                    <input type="radio" name="q6option" id="q6_2" value="Purple"> Purple
+                </label>
+            </div>
+            <div class="radio">
+                <label for="q6_3" class="radio">
+                    <input type="radio" name="q6option" id="q6_3" value="Black"> Black
+                </label>
+            </div>
+            <div class="radio">
+                <label for="q6_4" class="radio">
+                    <input type="radio" name="q6option" id="q6_4" value="Grey"> Grey
+                </label>
+            </div>
+            <p id="error6"></p>
+
+        </div>
+        <div>
+            <br>
+            <span class="modelLabel">7) Which of the following are PRIMARY COLOR</span>
+            <button onclick="return hint_7()" class="btn hintBtn">Hint</button>
+            <div class="checkbox">
+
+                <label>
+                    <input type="checkbox" value="Vodka" id="q7_1" name="q7Option">
+                    Red
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="Coffee" id="q7_2" name="q7Option">
+                    Green
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="Soda" id="q7_3" name="q7Option">
+                    Yellow
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="Beer" id="q7_4" name="q7Option">
+                    Blue
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="Wine" id="q7_5" name="q7Option">
+                    None of the Above
+                </label>
+            </div>
+            <p id="error7"></p>
+        </div>
+        <br>
+        <div id="btnPosition">
+            <button type="button" id="submitBtn" class="btn">Submit</button>
+        </div>
+        <br>
+        <div id="outputDiv"></div>
+    </form>
+
+    </body>
+    <footer>
+        <h6>&#169; Copyright 2021 Oluwatomisin D. Adisa</h6>
+    </footer>
+</div>
+</html>

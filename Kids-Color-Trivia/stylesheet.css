@@ -1,0 +1,90 @@
+/*
+##################################################
+Author - Oluwatomi
+Purpose - Custom CSS page overriding some bootstrap styling & personal styling
+Instructor - Joey Kitson
+Dependencies - Yes
+References - www.w3schools.com, stackoverflow & www.getbootstrap.com
+Since - 15/03/2021
+##################################################
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); /*Font imported*/
+
+* {
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+html {
+    background-color: #c6ffdd;
+}
+
+body {
+    /*background-color: cornflowerblue;*/
+    background: linear-gradient(to bottom, #c6ffdd, #fbd786, #f7797d)
+}
+
+
+#container {
+    padding: 10px;
+    border: solid 1px green;
+    width: 800px;
+    margin: 10px auto auto auto;
+    background-color: white;
+}
+.formRounded {
+    border-radius: 2rem;
+}
+.modelLabel {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: -5px;
+    font-weight: 700;
+}
+footer h6 {
+    text-align: center;
+}
+legend{
+    font-size: 4em;
+    background: linear-gradient(to bottom, #c6ffdd, #fbd786, #f7797d);
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 4px solid #c6ffdd;
+}
+
+#btnPosition{
+    text-align: center;
+}
+
+#submitBtn{
+    background-color: #c6ffdd;
+    font-weight: 950;
+    border-radius: 10px;
+}
+#header{
+    text-align: center;
+    font-weight: bolder;
+    color: #f7797d;
+}
+#outputDiv{
+    text-align: center;
+    font-size: 3em;
+}
+.hintBtn{
+    padding: 2px 5px;
+    margin-bottom: 3px;
+    border-radius: 8px;
+    font-weight: 700;
+    background-color: #fbd786;
+}
+p{
+    color: #f7797d;
+    padding-left: 10px;
+    font-weight: 900;
+}
+.form-control{
+    border: 2px solid #c6ffdd;
+}
